@@ -1,6 +1,6 @@
 class AuthorPostsSerializer < ActiveModel::Serializer
   attributes :title, :short_content
-  has_many :post_tags
+  has_many :tags
   def title
     object.title
   end
